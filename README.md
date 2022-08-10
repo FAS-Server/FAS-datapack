@@ -8,7 +8,8 @@
 - 附魔金苹果合成
 - 海绵合成
 
-isThatFAS_v1.0.0
+- isThatFAS_v1.0.0
+
 ![image](https://user-images.githubusercontent.com/82070627/183961201-d48f80b2-a282-4ae4-8c70-fbe514ddb49c.png)
 
 ***
