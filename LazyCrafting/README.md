@@ -6,20 +6,20 @@
 
 - 骨头 --> 骨块
 
-  ![](../assets/img/LazyCrafting/BoneToBlock.png)
+  <img src="../assets/img/LazyCrafting/BoneToBlock.png" style="zoom: 50%;" />
 
 - 投掷器 --> 发射器
 
-  ![](../assets/img/LazyCrafting/DropperToDispenser.png)
+  <img src="../assets/img/LazyCrafting/DropperToDispenser.png" style="zoom:50%;" />
 
 - 金苹果 --> 附魔金苹果
 
-  ![](../assets/img/LazyCrafting/EnchantedGoldenApple.png)
+  <img src="../assets/img/LazyCrafting/EnchantedGoldenApple.png" style="zoom:50%;" />
 
 - 鞘翅合成
 
-  ![](../assets/img/LazyCrafting/Elytra.png)
+  <img src="../assets/img/LazyCrafting/Elytra.png" style="zoom:50%;" />
 
 - 海绵合成
 
-  ![](../assets/img/LazyCrafting/Sponge.png)
+  <img src="../assets/img/LazyCrafting/Sponge.png" style="zoom:50%;" />
