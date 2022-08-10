@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_phantom",
+  "display": {
+    "icon": {
+      "item": "minecraft:slime_spawn_egg"
+    },
+    "title": "这是那只在异界的史莱姆吗?",
+    "description": "透过望远镜观察史莱姆",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_slime": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:slime"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_slime"
+    ]
+  ]
+}

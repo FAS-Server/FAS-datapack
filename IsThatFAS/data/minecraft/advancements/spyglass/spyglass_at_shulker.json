@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:shulker_spawn_egg"
+    },
+    "title": "这是潜影箱吗?",
+    "description": "透过望远镜观察潜影贝",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_shulker": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:shulker"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_shulker"
+    ]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_grass",
+  "display": {
+    "icon": {
+      "item": "minecraft:fern"
+    },
+    "title": "啊这，蕨了!",
+    "description": "透过望远镜观察蕨",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_fern": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:item",
+                  "nbt": "{Item: {id: \"minecraft:fern\"}}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_fern"
+    ]
+  ]
+}

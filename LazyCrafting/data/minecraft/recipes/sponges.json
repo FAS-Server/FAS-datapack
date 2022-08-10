@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "121",
+    "232",
+    "121"
+  ],
+  "key": {
+    "1": {
+      "tag": "minecraft:coral_fans"
+    },
+	"2": {
+      "tag": "minecraft:corals"
+    },
+	"3": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result": {
+    "item": "minecraft:sponge"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:piglin_spawn_egg"
+    },
+    "title": "大鼻孔的猪灵妹子!?",
+    "description": "透过望远镜观察猪灵",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_piglin": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:piglin"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_piglin"
+    ]
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_mooshroom",
+  "display": {
+    "icon": {
+      "item": "minecraft:cat_spawn_egg"
+    },
+    "title": "这是可可爱爱的喵菌?",
+    "description": "透过望远镜观察猫",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_cat": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:cat"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_cat"
+    ]
+  ]
+}

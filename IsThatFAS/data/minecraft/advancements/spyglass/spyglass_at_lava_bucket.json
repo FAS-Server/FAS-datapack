@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_grass_block",
+  "display": {
+    "icon": {
+      "item": "minecraft:lava_bucket"
+    },
+    "title": "那是Bukkit吗?",
+    "description": "透过望远镜观察熔岩桶",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_lava_bucket": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:item",
+                  "nbt": "{Item: {id: \"minecraft:lava_bucket\"}}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_lava_bucket"
+    ]
+  ]
+}

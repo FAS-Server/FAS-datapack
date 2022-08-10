@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_fern",
+  "display": {
+    "icon": {
+      "item": "minecraft:turtle_egg"
+    },
+    "title": "这王八蛋是谁的？",
+    "description": "透过望远镜观察海龟蛋",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_turtle_egg": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:item",
+                  "nbt": "{Item: {id: \"minecraft:turtle_egg\"}}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_turtle_egg"
+    ]
+  ]
+}

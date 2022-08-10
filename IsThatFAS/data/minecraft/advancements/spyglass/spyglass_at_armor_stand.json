@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_glow_item_frame_entity",
+  "display": {
+    "icon": {
+      "item": "minecraft:armor_stand"
+    },
+    "title": "那是骷髅吗?",
+    "description": "透过望远镜观察盔甲架",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_armor_stand": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:armor_stand"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_armor_stand"
+    ]
+  ]
+}

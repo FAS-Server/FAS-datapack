@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_painting",
+  "display": {
+    "icon": {
+      "item": "minecraft:book"
+    },
+    "title": "嘿!这是你的作业",
+    "description": "透过望远镜观察书",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_book": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:item",
+                  "nbt": "{Item: {id: \"minecraft:book\"}}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_book"
+    ]
+  ]
+}

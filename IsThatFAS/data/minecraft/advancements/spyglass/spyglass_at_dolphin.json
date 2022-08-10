@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_fox",
+  "display": {
+    "icon": {
+      "item": "minecraft:dolphin_spawn_egg"
+    },
+    "title": "那是CCS吗",
+    "description": "透过望远镜观察海豚",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_dolphin": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:dolphin"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_dolphin"
+    ]
+  ]
+}

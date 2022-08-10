@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_pufferfish",
+  "display": {
+    "icon": {
+      "item": "minecraft:axolotl_spawn_egg"
+    },
+    "title": "哇!多么可爱的小家伙哟",
+    "description": "透过望远镜观察蝾螈",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_axolotl": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:axolotl"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_axolotl"
+    ]
+  ]
+}

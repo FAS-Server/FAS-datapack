@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_crafting_table",
+  "display": {
+    "icon": {
+      "item": "minecraft:anvil"
+    },
+    "title": "那是Forge吗?",
+    "description": "透过望远镜观察铁砧",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_anvil": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:item",
+                  "nbt": "{Item: {id: \"minecraft:anvil\"}}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_anvil"
+    ]
+  ]
+}

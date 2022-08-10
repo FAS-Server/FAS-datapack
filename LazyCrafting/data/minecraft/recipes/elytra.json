@@ -1,0 +1,26 @@
+ {
+       "type": "crafting_shaped",
+       "pattern": [
+           "131",
+           "121",
+           "141"
+       ],
+       "key": {
+           "1": {
+               "item": "minecraft:phantom_membrane"
+           },
+           "2": {
+               "item": "minecraft:saddle"
+           },
+           "3": {
+               "item": "minecraft:nether_star"
+           },
+           "4": {
+               "item": "minecraft:dragon_egg"
+           }
+       },
+       "result": {
+           "item": "minecraft:elytra",
+           "count": 1
+       }
+	}

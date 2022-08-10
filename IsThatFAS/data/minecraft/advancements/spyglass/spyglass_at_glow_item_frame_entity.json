@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_item_frame_entity",
+  "display": {
+    "icon": {
+      "item": "minecraft:glow_item_frame"
+    },
+    "title": "这是个带RGB的展柜吗?",
+    "description": "透过望远镜观察荧光物品展示框",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_glow_item_frame": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:glow_item_frame"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_glow_item_frame"
+    ]
+  ]
+}

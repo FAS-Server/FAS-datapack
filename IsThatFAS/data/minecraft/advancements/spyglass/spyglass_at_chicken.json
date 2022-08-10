@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_chest",
+  "display": {
+    "icon": {
+      "item": "minecraft:chicken_spawn_egg"
+    },
+    "title": "那是LiteLoader吗?",
+    "description": "透过望远镜观察鸡",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_chicken": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:chicken"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_chicken"
+    ]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:spyglass/spyglass_at_spyglass",
+  "display": {
+    "icon": {
+      "item": "minecraft:pufferfish"
+    },
+    "title": "啊!这玩意有毒",
+    "description": "透过望远镜观察河豚",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_pufferfish": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:item",
+                  "nbt": "{Item: {id: \"minecraft:pufferfish\"}}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_pufferfish"
+    ]
+  ]
+}
