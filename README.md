@@ -6,6 +6,7 @@
 | -------------------------- | -------------------- | ------ | ------------------------------------------------------------ |
 | [懒人合成](LazyCrafting/README.md) | 加入了一些合成配方   | 1.17.1 | [V1.0](https://github.com/FAS-Server/FAS-datapack/releases/download/1.17.1-datapackV1.0/1.17.1-datapackV1.0.zip) |
 | [那是FAS吗](IsThatFAS/README.md)   | 加入了一些望远镜成就 | 1.17.1 | [V1.0](https://github.com/FAS-Server/FAS-datapack/releases/download/isThatFAS_v1.0.0/isThatFAS_v1.0.0.zip) |
+| [最佳时间](Best_Time/README.md)   | 为Hielke Maps添加了最佳时间排榜 | 1.19.3 | [V1.0](https://github.com/FAS-Server/FAS-datapack/releases/download/Best_Time_by_Hielke_Maps/Best_Time.zip) |
 
 ***
 ## 使用方法
