@@ -1,6 +1,6 @@
 > 为Hielke Maps添加了最佳时间排行榜
 
-目前在Parkour Town、Parkour Egg得到验证并正常使用
+目前在[Parkour Town](https://hielkemaps.com/maps/parkour-town)、[Parkour Egg](https://hielkemaps.com/maps/parkour-egg)得到验证并正常使用
 
 最佳时间在界面右侧显示，计数时间则在玩家名单list中显示
 
