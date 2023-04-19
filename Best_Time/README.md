@@ -11,7 +11,9 @@
 
 `execute if score @s player_count matches 11.. run scoreboard objectives setdisplay list time_display`
 `execute if score @s player_count matches 11.. run scoreboard objectives setdisplay sidebar`
+
 - 并将其修改为
+
 `#execute if score @s player_count matches ..10 run scoreboard objectives setdisplay list`
 `#execute if score @s player_count matches ..10 run scoreboard objectives setdisplay sidebar time_display`
 
