@@ -14,7 +14,7 @@
 
 `execute if score @s player_count matches 11.. run scoreboard objectives setdisplay sidebar`
 
-- 并将其修改为
+- 在命令最前面增加#注释掉这行命令即可
 
 `#execute if score @s player_count matches ..10 run scoreboard objectives setdisplay list`
 
